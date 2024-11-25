@@ -27,14 +27,34 @@
         .card{
             width: 300px;
             height: 200px;
-            border: 2px solid black;
+            border: 1px solid grey;
             padding: 20px;
             margin: 10px;
+        }
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .gallery{
+            display: grid;
+            gap: 10px;
+        }
+        .hover-button{
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 2px;
+            transition: background-color 0.3s ease;
+        }
+        .hover-button:hover {
+            background-color: darkblue;
         }
     </style>
 </head>
 <body>
-    <!-- 1st -->
+    <!-- 1st question -->
+
      <ul>
         <li class="list"> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQysIyyfR4IbpZ66S7UjqG_al1593PZdn3X5g&s">list 1</a></li>
         <li class="list"><a href="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/5-Series-2024/10182/1685002609273/front-left-side-47.jpg">list 2</a></li>
@@ -42,16 +62,44 @@
         <li class="list"><a href="https://wallpapers.com/images/featured/bmw-d942a3zxd8i3uqc8.jpg">list 4</a></li>
         <li class="list"><a href="https://media.istockphoto.com/id/1419936488/photo/bmw-m4.jpg?s=612x612&w=0&k=20&c=XQIDc0gZHeaxKDrs5SYJ6ymbWDAHUlSduaO0pJ0yGiA=">list 5</a></li>
      </ul><hr>
-     <!-- 2nd -->
+     <!-- 2nd question -->
       <div class="webpage">
          <h1 class="shadow">this is my web page</h1>
-         <p style="font-size: 1.2rem; height: 1.6rem;"> this is the format of the web page</p>
+         <p style="font-size: 1.2rem; height: 1.6rem; text-align: justify;"> this is the format of the web page</p>
       </div><hr>
-    <!-- 3rd -->
+    <!-- 3rd question -->
      <div class="card">
         <h1>mahesh</h1>
         <p>Number : 9087658437</p>
         <p>Address : hyd </p>
      </div><hr>
+
+     <!-- 4th question -->
+
+     
+     <nav class="navigation" >
+        <a href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/revuelto/2024/09_18_refresh/s1-mobile.jpg">lambo 1</a>
+        <a href="https://cdn.pixabay.com/photo/2023/09/06/17/48/ai-generated-8237688_1280.png">lambo 2</a>
+        <a href="https://i.ytimg.com/vi/zuonnDif7-U/hqdefault.jpg">lambo 3</a>
+      </nav><hr>
+
+      <!-- 5th question-->
+
+       <!-- 5th -->
+       <div class="gallery">
+        <img src="https://cdn.pixabay.com/photo/2023/09/06/17/48/ai-generated-8237688_1280.png" alt="1st">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQysIyyfR4IbpZ66S7UjqG_al1593PZdn3X5g&s" alt="2nd">
+        <img src="https://wallpapers.com/images/featured/bmw-d942a3zxd8i3uqc8.jpg" alt="3rd">
+        <img src="https://i.ytimg.com/vi/zuonnDif7-U/hqdefault.jpg" alt="4th">
+       </div>
+
+       <!-- 6th question -->
+       <button class="hover-button">Hover Me</button>
+
+
+
+
+
+
 </body>
 </html>
